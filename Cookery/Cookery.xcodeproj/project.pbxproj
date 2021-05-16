@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800E56852651B4F70045D1AD /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56842651B4F70045D1AD /* UIColor+Additions.swift */; };
+		800E56872651BB6E0045D1AD /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56862651BB6E0045D1AD /* UIFont+Additions.swift */; };
 		8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA38264B125A00B4D8D7 /* AppDelegate.swift */; };
 		8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */; };
 		8060FA3D264B125A00B4D8D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA3C264B125A00B4D8D7 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		800E56842651B4F70045D1AD /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		800E56862651BB6E0045D1AD /* UIFont+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
 		8060FA35264B125A00B4D8D7 /* Cookery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8060FA38264B125A00B4D8D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		800E56832651B4CA0045D1AD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				800E56842651B4F70045D1AD /* UIColor+Additions.swift */,
+				800E56862651BB6E0045D1AD /* UIFont+Additions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		8060FA2C264B125A00B4D8D7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 		8060FA37264B125A00B4D8D7 /* Cookery */ = {
 			isa = PBXGroup;
 			children = (
+				800E56832651B4CA0045D1AD /* Utilities */,
 				8060FA38264B125A00B4D8D7 /* AppDelegate.swift */,
 				8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */,
 				8060FA3C264B125A00B4D8D7 /* ViewController.swift */,
@@ -138,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8060FA3D264B125A00B4D8D7 /* ViewController.swift in Sources */,
+				800E56872651BB6E0045D1AD /* UIFont+Additions.swift in Sources */,
+				800E56852651B4F70045D1AD /* UIColor+Additions.swift in Sources */,
 				8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */,
 				8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */,
 			);
