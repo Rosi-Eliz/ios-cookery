@@ -13,6 +13,18 @@
 		8060FA40264B125A00B4D8D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8060FA3E264B125A00B4D8D7 /* Main.storyboard */; };
 		8060FA42264B125D00B4D8D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8060FA41264B125D00B4D8D7 /* Assets.xcassets */; };
 		8060FA45264B125D00B4D8D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8060FA43264B125D00B4D8D7 /* LaunchScreen.storyboard */; };
+		863FA23026512535008E7CF4 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863FA22F26512535008E7CF4 /* PreferencesController.swift */; };
+		863FA23326512926008E7CF4 /* SavedRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863FA23226512926008E7CF4 /* SavedRecipesController.swift */; };
+		863FA236265129F8008E7CF4 /* SavedRecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863FA234265129F8008E7CF4 /* SavedRecipeCell.swift */; };
+		863FA237265129F8008E7CF4 /* SavedRecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863FA235265129F8008E7CF4 /* SavedRecipeCell.xib */; };
+		863FA23B26518CE0008E7CF4 /* SavedRecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863FA23A26518CE0008E7CF4 /* SavedRecipeModel.swift */; };
+		863FA23D26519A88008E7CF4 /* FindRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863FA23C26519A88008E7CF4 /* FindRecipesController.swift */; };
+		863FA24026519B33008E7CF4 /* FindRecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863FA23E26519B33008E7CF4 /* FindRecipeCell.swift */; };
+		863FA24126519B33008E7CF4 /* FindRecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863FA23F26519B33008E7CF4 /* FindRecipeCell.xib */; };
+		8640297C2652908000834F58 /* AddIngredientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8640297B2652908000834F58 /* AddIngredientsController.swift */; };
+		8640297F2652916E00834F58 /* FindIngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8640297D2652916E00834F58 /* FindIngredientCell.swift */; };
+		864029802652916E00834F58 /* FindIngredientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8640297E2652916E00834F58 /* FindIngredientCell.xib */; };
+		864029822652E2EE00834F58 /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864029812652E2EE00834F58 /* IngredientModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		8060FA41264B125D00B4D8D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8060FA44264B125D00B4D8D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8060FA46264B125D00B4D8D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		863FA22F26512535008E7CF4 /* PreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
+		863FA23226512926008E7CF4 /* SavedRecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRecipesController.swift; sourceTree = "<group>"; };
+		863FA234265129F8008E7CF4 /* SavedRecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRecipeCell.swift; sourceTree = "<group>"; };
+		863FA235265129F8008E7CF4 /* SavedRecipeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedRecipeCell.xib; sourceTree = "<group>"; };
+		863FA23A26518CE0008E7CF4 /* SavedRecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRecipeModel.swift; sourceTree = "<group>"; };
+		863FA23C26519A88008E7CF4 /* FindRecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRecipesController.swift; sourceTree = "<group>"; };
+		863FA23E26519B33008E7CF4 /* FindRecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRecipeCell.swift; sourceTree = "<group>"; };
+		863FA23F26519B33008E7CF4 /* FindRecipeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindRecipeCell.xib; sourceTree = "<group>"; };
+		8640297B2652908000834F58 /* AddIngredientsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientsController.swift; sourceTree = "<group>"; };
+		8640297D2652916E00834F58 /* FindIngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIngredientCell.swift; sourceTree = "<group>"; };
+		8640297E2652916E00834F58 /* FindIngredientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindIngredientCell.xib; sourceTree = "<group>"; };
+		864029812652E2EE00834F58 /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,51 @@
 		8060FA37264B125A00B4D8D7 /* Cookery */ = {
 			isa = PBXGroup;
 			children = (
+				863FA23926518CB2008E7CF4 /* Model */,
+				863FA23826512BD0008E7CF4 /* Views */,
 				8060FA38264B125A00B4D8D7 /* AppDelegate.swift */,
 				8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */,
 				8060FA3C264B125A00B4D8D7 /* ViewController.swift */,
-				8060FA3E264B125A00B4D8D7 /* Main.storyboard */,
 				8060FA41264B125D00B4D8D7 /* Assets.xcassets */,
 				8060FA43264B125D00B4D8D7 /* LaunchScreen.storyboard */,
 				8060FA46264B125D00B4D8D7 /* Info.plist */,
+				863FA23126512909008E7CF4 /* Controllers */,
 			);
 			path = Cookery;
+			sourceTree = "<group>";
+		};
+		863FA23126512909008E7CF4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				863FA22F26512535008E7CF4 /* PreferencesController.swift */,
+				863FA23226512926008E7CF4 /* SavedRecipesController.swift */,
+				863FA23C26519A88008E7CF4 /* FindRecipesController.swift */,
+				8640297B2652908000834F58 /* AddIngredientsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		863FA23826512BD0008E7CF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8060FA3E264B125A00B4D8D7 /* Main.storyboard */,
+				863FA234265129F8008E7CF4 /* SavedRecipeCell.swift */,
+				863FA235265129F8008E7CF4 /* SavedRecipeCell.xib */,
+				863FA23E26519B33008E7CF4 /* FindRecipeCell.swift */,
+				863FA23F26519B33008E7CF4 /* FindRecipeCell.xib */,
+				8640297D2652916E00834F58 /* FindIngredientCell.swift */,
+				8640297E2652916E00834F58 /* FindIngredientCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		863FA23926518CB2008E7CF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				863FA23A26518CE0008E7CF4 /* SavedRecipeModel.swift */,
+				864029812652E2EE00834F58 /* IngredientModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +187,9 @@
 				8060FA45264B125D00B4D8D7 /* LaunchScreen.storyboard in Resources */,
 				8060FA42264B125D00B4D8D7 /* Assets.xcassets in Resources */,
 				8060FA40264B125A00B4D8D7 /* Main.storyboard in Resources */,
+				864029802652916E00834F58 /* FindIngredientCell.xib in Resources */,
+				863FA24126519B33008E7CF4 /* FindRecipeCell.xib in Resources */,
+				863FA237265129F8008E7CF4 /* SavedRecipeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +201,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8060FA3D264B125A00B4D8D7 /* ViewController.swift in Sources */,
+				863FA24026519B33008E7CF4 /* FindRecipeCell.swift in Sources */,
+				864029822652E2EE00834F58 /* IngredientModel.swift in Sources */,
+				8640297F2652916E00834F58 /* FindIngredientCell.swift in Sources */,
+				863FA23326512926008E7CF4 /* SavedRecipesController.swift in Sources */,
 				8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */,
+				863FA23B26518CE0008E7CF4 /* SavedRecipeModel.swift in Sources */,
+				863FA236265129F8008E7CF4 /* SavedRecipeCell.swift in Sources */,
 				8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */,
+				863FA23D26519A88008E7CF4 /* FindRecipesController.swift in Sources */,
+				8640297C2652908000834F58 /* AddIngredientsController.swift in Sources */,
+				863FA23026512535008E7CF4 /* PreferencesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
