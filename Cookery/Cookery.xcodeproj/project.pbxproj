@@ -15,6 +15,9 @@
 		800E56C12653134F0045D1AD /* ChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56C02653134F0045D1AD /* ChipView.swift */; };
 		800E56C3265313560045D1AD /* ChipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800E56C2265313560045D1AD /* ChipView.xib */; };
 		800E56C62653F51E0045D1AD /* MainContainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56C52653F51D0045D1AD /* MainContainmentViewController.swift */; };
+		800E56C92653FD340045D1AD /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56C82653FD340045D1AD /* NetworkingManager.swift */; };
+		800E56CB2653FD4A0045D1AD /* NetworkingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56CA2653FD4A0045D1AD /* NetworkingHandler.swift */; };
+		800E56CE2653FE830045D1AD /* NetworkingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56CD2653FE830045D1AD /* NetworkingModels.swift */; };
 		8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA38264B125A00B4D8D7 /* AppDelegate.swift */; };
 		8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */; };
 		8060FA3D264B125A00B4D8D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA3C264B125A00B4D8D7 /* ViewController.swift */; };
@@ -32,6 +35,9 @@
 		800E56C02653134F0045D1AD /* ChipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipView.swift; sourceTree = "<group>"; };
 		800E56C2265313560045D1AD /* ChipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChipView.xib; sourceTree = "<group>"; };
 		800E56C52653F51D0045D1AD /* MainContainmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContainmentViewController.swift; sourceTree = "<group>"; };
+		800E56C82653FD340045D1AD /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		800E56CA2653FD4A0045D1AD /* NetworkingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHandler.swift; sourceTree = "<group>"; };
+		800E56CD2653FE830045D1AD /* NetworkingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingModels.swift; sourceTree = "<group>"; };
 		8060FA35264B125A00B4D8D7 /* Cookery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8060FA38264B125A00B4D8D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +104,16 @@
 			path = MainContainment;
 			sourceTree = "<group>";
 		};
+		800E56C72653FD1D0045D1AD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				800E56C82653FD340045D1AD /* NetworkingManager.swift */,
+				800E56CA2653FD4A0045D1AD /* NetworkingHandler.swift */,
+				800E56CD2653FE830045D1AD /* NetworkingModels.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		8060FA2C264B125A00B4D8D7 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +133,7 @@
 		8060FA37264B125A00B4D8D7 /* Cookery */ = {
 			isa = PBXGroup;
 			children = (
+				800E56C72653FD1D0045D1AD /* Networking */,
 				800E56BA2651C9C80045D1AD /* Views */,
 				800E56882651C37E0045D1AD /* Intolerances */,
 				800E56832651B4CA0045D1AD /* Utilities */,
@@ -209,6 +226,9 @@
 				800E56BC2651CA070045D1AD /* PrimaryButton.swift in Sources */,
 				800E56C12653134F0045D1AD /* ChipView.swift in Sources */,
 				800E56BF265313430045D1AD /* ChipsSelectorView.swift in Sources */,
+				800E56C92653FD340045D1AD /* NetworkingManager.swift in Sources */,
+				800E56CB2653FD4A0045D1AD /* NetworkingHandler.swift in Sources */,
+				800E56CE2653FE830045D1AD /* NetworkingModels.swift in Sources */,
 				8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */,
 				800E56C62653F51E0045D1AD /* MainContainmentViewController.swift in Sources */,
 				8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */,
