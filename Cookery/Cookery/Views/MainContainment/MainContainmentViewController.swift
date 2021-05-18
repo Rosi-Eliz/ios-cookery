@@ -2,7 +2,7 @@
 //  MainContainmentViewController.swift
 //  Cookery
 //
-//  Created by Nikolay Andonov on 18.05.21.
+//  Created by Rosi-Eliz Dzhurkova on 17.05.21.
 //
 
 import UIKit
