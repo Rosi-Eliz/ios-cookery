@@ -14,6 +14,7 @@
 		800E56BF265313430045D1AD /* ChipsSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56BE265313430045D1AD /* ChipsSelectorView.swift */; };
 		800E56C12653134F0045D1AD /* ChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56C02653134F0045D1AD /* ChipView.swift */; };
 		800E56C3265313560045D1AD /* ChipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800E56C2265313560045D1AD /* ChipView.xib */; };
+		800E56C62653F51E0045D1AD /* MainContainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56C52653F51D0045D1AD /* MainContainmentViewController.swift */; };
 		8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA38264B125A00B4D8D7 /* AppDelegate.swift */; };
 		8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */; };
 		8060FA3D264B125A00B4D8D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA3C264B125A00B4D8D7 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		800E56BE265313430045D1AD /* ChipsSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipsSelectorView.swift; sourceTree = "<group>"; };
 		800E56C02653134F0045D1AD /* ChipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipView.swift; sourceTree = "<group>"; };
 		800E56C2265313560045D1AD /* ChipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChipView.xib; sourceTree = "<group>"; };
+		800E56C52653F51D0045D1AD /* MainContainmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContainmentViewController.swift; sourceTree = "<group>"; };
 		8060FA35264B125A00B4D8D7 /* Cookery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8060FA38264B125A00B4D8D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		800E56BA2651C9C80045D1AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				800E56C42653F4CC0045D1AD /* MainContainment */,
 				800E56BD2653132A0045D1AD /* ChipSelectorView */,
 				800E56BB2651CA070045D1AD /* PrimaryButton.swift */,
 			);
@@ -85,6 +88,14 @@
 				800E56BE265313430045D1AD /* ChipsSelectorView.swift */,
 			);
 			path = ChipSelectorView;
+			sourceTree = "<group>";
+		};
+		800E56C42653F4CC0045D1AD /* MainContainment */ = {
+			isa = PBXGroup;
+			children = (
+				800E56C52653F51D0045D1AD /* MainContainmentViewController.swift */,
+			);
+			path = MainContainment;
 			sourceTree = "<group>";
 		};
 		8060FA2C264B125A00B4D8D7 = {
@@ -199,6 +210,7 @@
 				800E56C12653134F0045D1AD /* ChipView.swift in Sources */,
 				800E56BF265313430045D1AD /* ChipsSelectorView.swift in Sources */,
 				8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */,
+				800E56C62653F51E0045D1AD /* MainContainmentViewController.swift in Sources */,
 				8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
