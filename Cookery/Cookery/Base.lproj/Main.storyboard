@@ -219,6 +219,58 @@
             </objects>
             <point key="canvasLocation" x="104" y="812"/>
         </scene>
+        <!--Preferences Controller-->
+        <scene sceneID="DLa-1a-cns">
+            <objects>
+                <viewController id="FQ3-lk-YfN" customClass="PreferencesController" customModule="Cookery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sbu-f6-a0H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57P-Av-JUN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.57267314199999997" green="0.82011252639999999" blue="0.2820973396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="PREFERENCES" id="k2g-pa-eg5"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv0-bZ-cyD">
+                                <rect key="frame" x="30" y="108" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.57267314199999997" green="0.82011252639999999" blue="0.2820973396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lpw-O0-SYD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Modify Intolerances">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="modifyButtonPressed:" destination="FQ3-lk-YfN" eventType="touchUpInside" id="ARK-C5-W9E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3RI-Ph-sBd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qv0-bZ-cyD" firstAttribute="top" secondItem="57P-Av-JUN" secondAttribute="bottom" constant="20" id="B5r-Hc-jJ2"/>
+                            <constraint firstItem="3RI-Ph-sBd" firstAttribute="trailing" secondItem="qv0-bZ-cyD" secondAttribute="trailing" constant="30" id="Mlu-X7-Kq8"/>
+                            <constraint firstItem="qv0-bZ-cyD" firstAttribute="leading" secondItem="3RI-Ph-sBd" secondAttribute="leading" constant="30" id="UnD-oC-zMd"/>
+                            <constraint firstItem="57P-Av-JUN" firstAttribute="top" secondItem="3RI-Ph-sBd" secondAttribute="top" id="c6I-po-pyB"/>
+                            <constraint firstItem="57P-Av-JUN" firstAttribute="leading" secondItem="3RI-Ph-sBd" secondAttribute="leading" id="dQt-Vv-nb5"/>
+                            <constraint firstItem="57P-Av-JUN" firstAttribute="trailing" secondItem="3RI-Ph-sBd" secondAttribute="trailing" id="ynZ-Se-7K1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="modifyButtonLabel" destination="qv0-bZ-cyD" id="6FD-fJ-Zxd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLf-zE-mQX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2067" y="80"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bookmarksIcon" width="16" height="22"/>
