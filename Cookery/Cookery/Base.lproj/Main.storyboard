@@ -432,6 +432,97 @@
             </objects>
             <point key="canvasLocation" x="2587" y="776"/>
         </scene>
+        <!--Find Recipies Controller-->
+        <scene sceneID="mKL-fy-R7F">
+            <objects>
+                <viewController id="K3j-UY-n9P" customClass="FindRecipiesController" customModule="Cookery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gad-bH-QEe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZJ-xt-Syv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.57267314199999997" green="0.82011252639999999" blue="0.2820973396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="RECIPES" id="bpG-yU-vzI"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="grb-WY-7vf">
+                                <rect key="frame" x="20" y="103" width="374" height="87"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Recipies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myj-gG-wlo">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v8I-rC-Obg">
+                                        <rect key="frame" x="0.0" y="37" width="374" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-ks-uEM">
+                                                <rect key="frame" x="0.0" y="0.0" width="319" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCF-sn-4cI">
+                                                <rect key="frame" x="324" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="GyX-gO-Gut"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Mdp-2P-ZN7"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" image="searchBarButton">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="searchButtonPressed:" destination="K3j-UY-n9P" eventType="touchUpInside" id="q8w-0L-eBz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEP-QC-g8t">
+                                <rect key="frame" x="20" y="220" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iBA-vL-piC">
+                                <rect key="frame" x="0.0" y="259" width="414" height="637"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dyr-Uo-zkl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fZJ-xt-Syv" firstAttribute="leading" secondItem="dyr-Uo-zkl" secondAttribute="leading" id="32A-vk-hl4"/>
+                            <constraint firstAttribute="bottom" secondItem="iBA-vL-piC" secondAttribute="bottom" id="7Mb-Km-BqP"/>
+                            <constraint firstItem="HEP-QC-g8t" firstAttribute="top" secondItem="grb-WY-7vf" secondAttribute="bottom" constant="30" id="9sC-mO-CEm"/>
+                            <constraint firstItem="grb-WY-7vf" firstAttribute="leading" secondItem="dyr-Uo-zkl" secondAttribute="leading" constant="20" id="A6i-A1-mtJ"/>
+                            <constraint firstItem="grb-WY-7vf" firstAttribute="top" secondItem="fZJ-xt-Syv" secondAttribute="bottom" constant="15" id="E8T-ep-3Ct"/>
+                            <constraint firstItem="iBA-vL-piC" firstAttribute="top" secondItem="HEP-QC-g8t" secondAttribute="bottom" constant="10" id="Hex-R1-mJy"/>
+                            <constraint firstItem="dyr-Uo-zkl" firstAttribute="trailing" secondItem="grb-WY-7vf" secondAttribute="trailing" constant="20" id="PZB-lj-m5s"/>
+                            <constraint firstItem="fZJ-xt-Syv" firstAttribute="trailing" secondItem="dyr-Uo-zkl" secondAttribute="trailing" id="ZFn-3X-xc9"/>
+                            <constraint firstItem="dyr-Uo-zkl" firstAttribute="trailing" secondItem="HEP-QC-g8t" secondAttribute="trailing" constant="20" id="ZsA-cp-4Ix"/>
+                            <constraint firstItem="iBA-vL-piC" firstAttribute="leading" secondItem="dyr-Uo-zkl" secondAttribute="leading" id="agp-cP-lZ6"/>
+                            <constraint firstItem="iBA-vL-piC" firstAttribute="trailing" secondItem="dyr-Uo-zkl" secondAttribute="trailing" id="e95-iQ-v79"/>
+                            <constraint firstItem="HEP-QC-g8t" firstAttribute="leading" secondItem="dyr-Uo-zkl" secondAttribute="leading" constant="20" id="uOC-1t-dBY"/>
+                            <constraint firstItem="fZJ-xt-Syv" firstAttribute="top" secondItem="dyr-Uo-zkl" secondAttribute="top" id="yuU-bf-4hP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchField" destination="MWM-ks-uEM" id="D3h-iV-Xgr"/>
+                        <outlet property="tableView" destination="iBA-vL-piC" id="QDB-uB-XY5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Uc-GP-iNb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3404" y="80"/>
+        </scene>
     </scenes>
     <resources>
         <image name="addButton" width="38" height="38"/>
