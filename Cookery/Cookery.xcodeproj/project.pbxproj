@@ -29,6 +29,9 @@
 		8060FA45264B125D00B4D8D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8060FA43264B125D00B4D8D7 /* LaunchScreen.storyboard */; };
 		86FFFE5926553CD800A96E72 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FFFE5826553CD800A96E72 /* PreferencesController.swift */; };
 		86FFFE5D26553E1E00A96E72 /* SavedRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FFFE5C26553E1E00A96E72 /* SavedRecipesController.swift */; };
+		86FFFE6126553F7600A96E72 /* SavedRecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FFFE5F26553F7600A96E72 /* SavedRecipeCell.swift */; };
+		86FFFE6226553F7600A96E72 /* SavedRecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86FFFE6026553F7600A96E72 /* SavedRecipeCell.xib */; };
+		86FFFE6426553FB700A96E72 /* SavedRecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FFFE6326553FB700A96E72 /* SavedRecipeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		8060FA46264B125D00B4D8D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86FFFE5826553CD800A96E72 /* PreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
 		86FFFE5C26553E1E00A96E72 /* SavedRecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SavedRecipesController.swift; path = Cookery/SavedRecipesController.swift; sourceTree = SOURCE_ROOT; };
+		86FFFE5F26553F7600A96E72 /* SavedRecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedRecipeCell.swift; path = ../../../../../../temp/Views/SavedRecipeCell.swift; sourceTree = "<group>"; };
+		86FFFE6026553F7600A96E72 /* SavedRecipeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SavedRecipeCell.xib; path = ../../../../../../temp/Views/SavedRecipeCell.xib; sourceTree = "<group>"; };
+		86FFFE6326553FB700A96E72 /* SavedRecipeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedRecipeModel.swift; path = ../../../../../temp/Model/SavedRecipeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 		800E56BA2651C9C80045D1AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				86FFFE5E26553F5900A96E72 /* SavedRecipe */,
 				800E56C42653F4CC0045D1AD /* MainContainment */,
 				800E56BD2653132A0045D1AD /* ChipSelectorView */,
 				800E56BB2651CA070045D1AD /* PrimaryButton.swift */,
@@ -182,9 +189,19 @@
 		86FFFE5B26553E0800A96E72 /* SavedRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				86FFFE6326553FB700A96E72 /* SavedRecipeModel.swift */,
 				86FFFE5C26553E1E00A96E72 /* SavedRecipesController.swift */,
 			);
 			path = SavedRecipes;
+			sourceTree = "<group>";
+		};
+		86FFFE5E26553F5900A96E72 /* SavedRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				86FFFE5F26553F7600A96E72 /* SavedRecipeCell.swift */,
+				86FFFE6026553F7600A96E72 /* SavedRecipeCell.xib */,
+			);
+			path = SavedRecipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +264,7 @@
 				800E56C3265313560045D1AD /* ChipView.xib in Resources */,
 				8060FA45264B125D00B4D8D7 /* LaunchScreen.storyboard in Resources */,
 				8060FA42264B125D00B4D8D7 /* Assets.xcassets in Resources */,
+				86FFFE6226553F7600A96E72 /* SavedRecipeCell.xib in Resources */,
 				8060FA40264B125A00B4D8D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8060FA3D264B125A00B4D8D7 /* ViewController.swift in Sources */,
+				86FFFE6126553F7600A96E72 /* SavedRecipeCell.swift in Sources */,
 				800E56872651BB6E0045D1AD /* UIFont+Additions.swift in Sources */,
 				800E56B92651C7810045D1AD /* IntolerancesViewController.swift in Sources */,
 				800E56852651B4F70045D1AD /* UIColor+Additions.swift in Sources */,
@@ -274,6 +293,7 @@
 				800E56CE2653FE830045D1AD /* NetworkingModels.swift in Sources */,
 				8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */,
 				800E56C62653F51E0045D1AD /* MainContainmentViewController.swift in Sources */,
+				86FFFE6426553FB700A96E72 /* SavedRecipeModel.swift in Sources */,
 				8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */,
 				800E56D52654812C0045D1AD /* StorageManager.swift in Sources */,
 			);
