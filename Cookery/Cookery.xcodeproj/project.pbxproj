@@ -27,7 +27,7 @@
 		86DF59772655B2C7001B4D7C /* FindRecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86FFFE922655AE4E00A96E72 /* FindRecipeCell.xib */; };
 		86DF59792655B2E5001B4D7C /* SavedRecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DF59782655B2E5001B4D7C /* SavedRecipeModel.swift */; };
 		86DF597C2655B44A001B4D7C /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DF597B2655B44A001B4D7C /* PreferencesController.swift */; };
-		86FFFE842655AD4800A96E72 /* FindRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FFFE832655AD4800A96E72 /* FindRecipesController.swift */; };
+		86DF597E2655B4DD001B4D7C /* FindRecipiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DF597D2655B4DD001B4D7C /* FindRecipiesController.swift */; };
 		86FFFE952655B00100A96E72 /* SavedRecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86FFFE942655B00100A96E72 /* SavedRecipeCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		86DF59732655B291001B4D7C /* SavedRecipesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRecipesController.swift; sourceTree = "<group>"; };
 		86DF59782655B2E5001B4D7C /* SavedRecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRecipeModel.swift; sourceTree = "<group>"; };
 		86DF597B2655B44A001B4D7C /* PreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
-		86FFFE832655AD4800A96E72 /* FindRecipesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindRecipesController.swift; path = ../../../../../test/FindRecipesController.swift; sourceTree = "<group>"; };
+		86DF597D2655B4DD001B4D7C /* FindRecipiesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRecipiesController.swift; sourceTree = "<group>"; };
 		86FFFE912655AE4600A96E72 /* SavedRecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SavedRecipeCell.swift; path = "../../../../../../../Downloads/Archive (1)/SavedRecipeCell.swift"; sourceTree = "<group>"; };
 		86FFFE922655AE4E00A96E72 /* FindRecipeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FindRecipeCell.xib; path = "../../../../../../../Downloads/Archive (1)/FindRecipeCell.xib"; sourceTree = "<group>"; };
 		86FFFE932655AE4E00A96E72 /* FindRecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FindRecipeCell.swift; path = "../../../../../../../Downloads/Archive (1)/FindRecipeCell.swift"; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 		86FFFE822655AD2000A96E72 /* FindRecipies */ = {
 			isa = PBXGroup;
 			children = (
-				86FFFE832655AD4800A96E72 /* FindRecipesController.swift */,
+				86DF597D2655B4DD001B4D7C /* FindRecipiesController.swift */,
 			);
 			path = FindRecipies;
 			sourceTree = "<group>";
@@ -268,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DF597E2655B4DD001B4D7C /* FindRecipiesController.swift in Sources */,
 				8060FA3D264B125A00B4D8D7 /* ViewController.swift in Sources */,
 				86DF59752655B2BF001B4D7C /* SavedRecipeCell.swift in Sources */,
 				800E56872651BB6E0045D1AD /* UIFont+Additions.swift in Sources */,
@@ -280,7 +281,6 @@
 				800E56BF265313430045D1AD /* ChipsSelectorView.swift in Sources */,
 				8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */,
 				800E56C62653F51E0045D1AD /* MainContainmentViewController.swift in Sources */,
-				86FFFE842655AD4800A96E72 /* FindRecipesController.swift in Sources */,
 				86DF59792655B2E5001B4D7C /* SavedRecipeModel.swift in Sources */,
 				86DF59762655B2C2001B4D7C /* FindRecipeCell.swift in Sources */,
 				8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */,
