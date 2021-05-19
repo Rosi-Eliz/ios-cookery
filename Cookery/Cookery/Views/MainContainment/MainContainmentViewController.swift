@@ -23,8 +23,8 @@ class MainContainmentViewController: UIViewController {
         var viewControllers: [UIViewController] = []
         viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "IntolerancesViewController"))
         viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "IntolerancesViewController"))
-        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "IntolerancesViewController"))
-        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "IntolerancesViewController"))
+        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "SavedRecipesController"))
+        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PreferencesController"))
         
         return viewControllers
     }()
@@ -69,7 +69,7 @@ class MainContainmentViewController: UIViewController {
     @IBAction func fourthTabAction(_ sender: Any) {
         add(containedViewControllers[3])
         setActiveTab(3)
-        navigationItem.title = "Intolerances".uppercased()
+        navigationItem.title = "Prefences".uppercased()
         navigationItem.titleView = nil
     }
     

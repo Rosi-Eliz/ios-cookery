@@ -15,6 +15,8 @@ class PreferencesController: UIViewController {
         super.viewDidLoad()
         
         modifyButtonLabel.layer.cornerRadius = 10
+        modifyButtonLabel.backgroundColor = .mainGreen
+        modifyButtonLabel.titleLabel?.font = .primaryTitleFont
     }
 
     @IBAction func modifyButtonPressed(_ sender: Any) {

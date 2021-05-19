@@ -170,6 +170,7 @@
 				86FFFE652655407000A96E72 /* SearchRecipes */,
 				86FFFE5B26553E0800A96E72 /* SavedRecipes */,
 				800E56CF2654808A0045D1AD /* SearchIngredients */,
+				86FFFE5A26553D2400A96E72 /* Preferences */,
 				800E56C72653FD1D0045D1AD /* Networking */,
 				800E56BA2651C9C80045D1AD /* Views */,
 				800E56882651C37E0045D1AD /* Intolerances */,
@@ -181,7 +182,6 @@
 				8060FA41264B125D00B4D8D7 /* Assets.xcassets */,
 				8060FA43264B125D00B4D8D7 /* LaunchScreen.storyboard */,
 				8060FA46264B125D00B4D8D7 /* Info.plist */,
-				86FFFE5A26553D2400A96E72 /* Preferences */,
 			);
 			path = Cookery;
 			sourceTree = "<group>";
