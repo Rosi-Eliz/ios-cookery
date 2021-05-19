@@ -425,7 +425,7 @@
         <!--Find Recipies Controller-->
         <scene sceneID="mKL-fy-R7F">
             <objects>
-                <viewController storyboardIdentifier="FindRecipiesController" id="K3j-UY-n9P" customClass="FindRecipiesController" customModule="Cookery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FindRecipiesController" id="K3j-UY-n9P" customClass="FindRecipiesController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gad-bH-QEe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
