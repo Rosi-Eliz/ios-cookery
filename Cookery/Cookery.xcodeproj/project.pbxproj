@@ -18,6 +18,9 @@
 		800E56C92653FD340045D1AD /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56C82653FD340045D1AD /* NetworkingManager.swift */; };
 		800E56CB2653FD4A0045D1AD /* NetworkingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56CA2653FD4A0045D1AD /* NetworkingHandler.swift */; };
 		800E56CE2653FE830045D1AD /* NetworkingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56CD2653FE830045D1AD /* NetworkingModels.swift */; };
+		800E56D1265480B70045D1AD /* SearchIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56D0265480B70045D1AD /* SearchIngredientsViewController.swift */; };
+		800E56D3265481110045D1AD /* SearchIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56D2265481110045D1AD /* SearchIngredientTableViewCell.swift */; };
+		800E56D52654812C0045D1AD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E56D42654812C0045D1AD /* StorageManager.swift */; };
 		8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA38264B125A00B4D8D7 /* AppDelegate.swift */; };
 		8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */; };
 		8060FA3D264B125A00B4D8D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FA3C264B125A00B4D8D7 /* ViewController.swift */; };
@@ -38,6 +41,9 @@
 		800E56C82653FD340045D1AD /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		800E56CA2653FD4A0045D1AD /* NetworkingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHandler.swift; sourceTree = "<group>"; };
 		800E56CD2653FE830045D1AD /* NetworkingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingModels.swift; sourceTree = "<group>"; };
+		800E56D0265480B70045D1AD /* SearchIngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchIngredientsViewController.swift; sourceTree = "<group>"; };
+		800E56D2265481110045D1AD /* SearchIngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchIngredientTableViewCell.swift; sourceTree = "<group>"; };
+		800E56D42654812C0045D1AD /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		8060FA35264B125A00B4D8D7 /* Cookery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8060FA38264B125A00B4D8D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8060FA3A264B125A00B4D8D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 		800E56832651B4CA0045D1AD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				800E56D42654812C0045D1AD /* StorageManager.swift */,
 				800E56842651B4F70045D1AD /* UIColor+Additions.swift */,
 				800E56862651BB6E0045D1AD /* UIFont+Additions.swift */,
 			);
@@ -114,6 +121,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		800E56CF2654808A0045D1AD /* SearchIngredients */ = {
+			isa = PBXGroup;
+			children = (
+				800E56D2265481110045D1AD /* SearchIngredientTableViewCell.swift */,
+				800E56D0265480B70045D1AD /* SearchIngredientsViewController.swift */,
+			);
+			path = SearchIngredients;
+			sourceTree = "<group>";
+		};
 		8060FA2C264B125A00B4D8D7 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +149,7 @@
 		8060FA37264B125A00B4D8D7 /* Cookery */ = {
 			isa = PBXGroup;
 			children = (
+				800E56CF2654808A0045D1AD /* SearchIngredients */,
 				800E56C72653FD1D0045D1AD /* Networking */,
 				800E56BA2651C9C80045D1AD /* Views */,
 				800E56882651C37E0045D1AD /* Intolerances */,
@@ -224,14 +241,17 @@
 				800E56B92651C7810045D1AD /* IntolerancesViewController.swift in Sources */,
 				800E56852651B4F70045D1AD /* UIColor+Additions.swift in Sources */,
 				800E56BC2651CA070045D1AD /* PrimaryButton.swift in Sources */,
+				800E56D1265480B70045D1AD /* SearchIngredientsViewController.swift in Sources */,
 				800E56C12653134F0045D1AD /* ChipView.swift in Sources */,
 				800E56BF265313430045D1AD /* ChipsSelectorView.swift in Sources */,
+				800E56D3265481110045D1AD /* SearchIngredientTableViewCell.swift in Sources */,
 				800E56C92653FD340045D1AD /* NetworkingManager.swift in Sources */,
 				800E56CB2653FD4A0045D1AD /* NetworkingHandler.swift in Sources */,
 				800E56CE2653FE830045D1AD /* NetworkingModels.swift in Sources */,
 				8060FA39264B125A00B4D8D7 /* AppDelegate.swift in Sources */,
 				800E56C62653F51E0045D1AD /* MainContainmentViewController.swift in Sources */,
 				8060FA3B264B125A00B4D8D7 /* SceneDelegate.swift in Sources */,
+				800E56D52654812C0045D1AD /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
