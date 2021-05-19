@@ -392,6 +392,46 @@
             </objects>
             <point key="canvasLocation" x="2587" y="80"/>
         </scene>
+        <!--Saved Recipes Controller-->
+        <scene sceneID="1wd-Rs-flO">
+            <objects>
+                <viewController id="kAQ-Tx-6TS" customClass="SavedRecipesController" customModule="Cookery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fIQ-GA-3ia">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSc-4a-d7I">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.57267314199999997" green="0.82011252639999999" blue="0.2820973396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="SAVED RECIPES" id="Mgk-1i-iyf"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PfA-KS-EIC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DYU-cm-ZAK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BSc-4a-d7I" firstAttribute="trailing" secondItem="DYU-cm-ZAK" secondAttribute="trailing" id="4L3-5d-UF0"/>
+                            <constraint firstItem="BSc-4a-d7I" firstAttribute="leading" secondItem="DYU-cm-ZAK" secondAttribute="leading" id="rPq-Ey-e4Y"/>
+                            <constraint firstItem="BSc-4a-d7I" firstAttribute="top" secondItem="DYU-cm-ZAK" secondAttribute="top" id="sSE-Ik-GO9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="PfA-KS-EIC" id="K1P-Tv-1bc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPL-tE-cJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2587" y="776"/>
+        </scene>
     </scenes>
     <resources>
         <image name="addButton" width="38" height="38"/>
