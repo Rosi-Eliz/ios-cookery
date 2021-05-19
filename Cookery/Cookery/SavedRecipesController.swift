@@ -45,6 +45,13 @@ extension SavedRecipesController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            recipeModel.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     //rendering stars for rating
     func ratingCalc(rating: Int) ->  NSMutableAttributedString {
         let imageAttachment = NSTextAttachment()

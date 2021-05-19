@@ -62,7 +62,7 @@ class MainContainmentViewController: UIViewController {
     @IBAction func thirdTabAction(_ sender: Any) {
         add(containedViewControllers[2])
         setActiveTab(2)
-        navigationItem.title = "Intolerances".uppercased()
+        navigationItem.title = "Saved Recipies".uppercased()
         navigationItem.titleView = nil
     }
     
