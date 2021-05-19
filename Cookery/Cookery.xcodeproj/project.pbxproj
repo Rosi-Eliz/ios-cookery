@@ -27,6 +27,7 @@
 		8060FA40264B125A00B4D8D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8060FA3E264B125A00B4D8D7 /* Main.storyboard */; };
 		8060FA42264B125D00B4D8D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8060FA41264B125D00B4D8D7 /* Assets.xcassets */; };
 		8060FA45264B125D00B4D8D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8060FA43264B125D00B4D8D7 /* LaunchScreen.storyboard */; };
+		86FFFE5926553CD800A96E72 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FFFE5826553CD800A96E72 /* PreferencesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8060FA41264B125D00B4D8D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8060FA44264B125D00B4D8D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8060FA46264B125D00B4D8D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86FFFE5826553CD800A96E72 /* PreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +163,17 @@
 				8060FA41264B125D00B4D8D7 /* Assets.xcassets */,
 				8060FA43264B125D00B4D8D7 /* LaunchScreen.storyboard */,
 				8060FA46264B125D00B4D8D7 /* Info.plist */,
+				86FFFE5A26553D2400A96E72 /* Preferences */,
 			);
 			path = Cookery;
+			sourceTree = "<group>";
+		};
+		86FFFE5A26553D2400A96E72 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				86FFFE5826553CD800A96E72 /* PreferencesController.swift */,
+			);
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 				800E56B92651C7810045D1AD /* IntolerancesViewController.swift in Sources */,
 				800E56852651B4F70045D1AD /* UIColor+Additions.swift in Sources */,
 				800E56BC2651CA070045D1AD /* PrimaryButton.swift in Sources */,
+				86FFFE5926553CD800A96E72 /* PreferencesController.swift in Sources */,
 				800E56D1265480B70045D1AD /* SearchIngredientsViewController.swift in Sources */,
 				800E56C12653134F0045D1AD /* ChipView.swift in Sources */,
 				800E56BF265313430045D1AD /* ChipsSelectorView.swift in Sources */,
