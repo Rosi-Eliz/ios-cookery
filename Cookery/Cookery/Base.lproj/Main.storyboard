@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iol-73-XyH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bTA-4W-7TA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -296,70 +296,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bAI-wI-AV4">
-                                <rect key="frame" x="20" y="74" width="374" height="87"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Recipies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSK-4e-euS">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zrZ-tW-BVi">
-                                        <rect key="frame" x="0.0" y="37" width="374" height="50"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Frx-bn-3CT">
-                                                <rect key="frame" x="0.0" y="0.0" width="319" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKa-mP-Aht">
-                                                <rect key="frame" x="324" y="0.5" width="50" height="49"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Uzc-hT-dds"/>
-                                                    <constraint firstAttribute="width" constant="50" id="f9L-d7-Csd"/>
-                                                </constraints>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                                <state key="normal" backgroundImage="magnifyingglass.circle" catalog="system">
-                                                    <color key="titleColor" systemColor="labelColor"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="searchButtonPressed:" destination="bTA-4W-7TA" eventType="touchUpInside" id="wL3-Pk-xo2"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uF0-HQ-G46">
-                                <rect key="frame" x="20" y="191" width="374" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Recipies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSK-4e-euS">
+                                <rect key="frame" x="20" y="64" width="374" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQb-zo-dQj" userLabel="Search Bar Container">
+                                <rect key="frame" x="20" y="113" width="374" height="50"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Op-cC-XCO">
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="50"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP0-jj-1P8">
+                                        <rect key="frame" x="324" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="searchBarButton"/>
+                                        <connections>
+                                            <action selector="searchButton:" destination="Baf-Nf-I4B" eventType="touchUpInside" id="1cQ-7Z-B1w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="sP0-jj-1P8" firstAttribute="top" secondItem="DQb-zo-dQj" secondAttribute="top" id="CHF-8n-L1d"/>
+                                    <constraint firstItem="9Op-cC-XCO" firstAttribute="top" secondItem="DQb-zo-dQj" secondAttribute="top" id="PI0-5J-q9t"/>
+                                    <constraint firstItem="sP0-jj-1P8" firstAttribute="leading" secondItem="9Op-cC-XCO" secondAttribute="trailing" id="Tno-dU-ab0"/>
+                                    <constraint firstItem="9Op-cC-XCO" firstAttribute="leading" secondItem="DQb-zo-dQj" secondAttribute="leading" id="be6-z0-1bn"/>
+                                    <constraint firstAttribute="trailing" secondItem="sP0-jj-1P8" secondAttribute="trailing" id="cTK-0c-7Aa"/>
+                                    <constraint firstAttribute="bottom" secondItem="sP0-jj-1P8" secondAttribute="bottom" id="d9H-pu-boK"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Op-cC-XCO" secondAttribute="bottom" id="dhF-KK-rhg"/>
+                                    <constraint firstAttribute="height" constant="50" id="oJK-cG-fAk"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rsY-Ad-ZTs">
-                                <rect key="frame" x="0.0" y="230" width="414" height="666"/>
+                                <rect key="frame" x="0.0" y="183" width="414" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pTV-cv-qg1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pTV-cv-qg1" firstAttribute="trailing" secondItem="bAI-wI-AV4" secondAttribute="trailing" constant="20" id="Bek-YK-4pD"/>
+                            <constraint firstItem="pTV-cv-qg1" firstAttribute="trailing" secondItem="lSK-4e-euS" secondAttribute="trailing" constant="20" id="6b5-5K-d8J"/>
+                            <constraint firstItem="lSK-4e-euS" firstAttribute="top" secondItem="pTV-cv-qg1" secondAttribute="top" constant="20" id="EHA-2D-rO4"/>
+                            <constraint firstItem="DQb-zo-dQj" firstAttribute="leading" secondItem="pTV-cv-qg1" secondAttribute="leading" constant="20" id="G5e-51-3Ys"/>
                             <constraint firstItem="rsY-Ad-ZTs" firstAttribute="trailing" secondItem="pTV-cv-qg1" secondAttribute="trailing" id="MT6-oO-1uU"/>
-                            <constraint firstItem="pTV-cv-qg1" firstAttribute="trailing" secondItem="uF0-HQ-G46" secondAttribute="trailing" constant="20" id="T6A-XH-BSa"/>
-                            <constraint firstItem="uF0-HQ-G46" firstAttribute="leading" secondItem="pTV-cv-qg1" secondAttribute="leading" constant="20" id="gIg-Yn-Kqu"/>
+                            <constraint firstItem="DQb-zo-dQj" firstAttribute="top" secondItem="lSK-4e-euS" secondAttribute="bottom" constant="20" id="T0v-bX-Gew"/>
+                            <constraint firstItem="DQb-zo-dQj" firstAttribute="top" secondItem="lSK-4e-euS" secondAttribute="bottom" constant="20" id="c07-8j-cwa"/>
+                            <constraint firstItem="pTV-cv-qg1" firstAttribute="trailing" secondItem="DQb-zo-dQj" secondAttribute="trailing" constant="20" id="eIf-nt-CXf"/>
                             <constraint firstItem="rsY-Ad-ZTs" firstAttribute="leading" secondItem="pTV-cv-qg1" secondAttribute="leading" id="gSh-Q3-rpR"/>
-                            <constraint firstItem="bAI-wI-AV4" firstAttribute="leading" secondItem="pTV-cv-qg1" secondAttribute="leading" constant="20" id="inT-JM-KXr"/>
-                            <constraint firstItem="rsY-Ad-ZTs" firstAttribute="top" secondItem="uF0-HQ-G46" secondAttribute="bottom" constant="10" id="mVY-xS-QrN"/>
-                            <constraint firstItem="bAI-wI-AV4" firstAttribute="top" secondItem="pTV-cv-qg1" secondAttribute="top" constant="30" id="n1b-Hi-Tu4"/>
-                            <constraint firstItem="uF0-HQ-G46" firstAttribute="top" secondItem="bAI-wI-AV4" secondAttribute="bottom" constant="30" id="qH2-eu-tMF"/>
+                            <constraint firstItem="rsY-Ad-ZTs" firstAttribute="top" secondItem="DQb-zo-dQj" secondAttribute="bottom" constant="20" id="n8G-B8-g6H"/>
                             <constraint firstAttribute="bottom" secondItem="rsY-Ad-ZTs" secondAttribute="bottom" id="ruR-67-OVg"/>
+                            <constraint firstItem="lSK-4e-euS" firstAttribute="leading" secondItem="pTV-cv-qg1" secondAttribute="leading" constant="20" id="uql-VN-UbX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="searchField" destination="Frx-bn-3CT" id="mHp-v8-IlT"/>
+                        <outlet property="searchBar" destination="9Op-cC-XCO" id="ErK-1I-MGg"/>
+                        <outlet property="searchBarContainer" destination="DQb-zo-dQj" id="gPa-rn-NCx"/>
                         <outlet property="tableView" destination="rsY-Ad-ZTs" id="rQX-ab-Wjl"/>
+                        <outlet property="titleLabel" destination="lSK-4e-euS" id="hPX-lk-ml7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irb-cX-jdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -505,7 +504,6 @@
         <image name="addButton" width="38" height="38"/>
         <image name="bookmarksIcon" width="16" height="22"/>
         <image name="dashboardIcon" width="22" height="20"/>
-        <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
         <image name="mealsIcon" width="19" height="21"/>
         <image name="searchBarButton" width="50" height="50"/>
         <image name="searchButton" width="78" height="78"/>

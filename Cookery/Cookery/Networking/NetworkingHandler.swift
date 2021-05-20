@@ -13,11 +13,15 @@ class NetwokringHandler {
         private static let baseURL = "https://api.spoonacular.com"
         case randomRecipes
         case foodIngredientsAutocomplete
+        case recipeAutocomplete
         
         fileprivate var stringURL: String {
             switch self {
             case .randomRecipes: return Endpoint.baseURL.appending("/recipes/random")
             case .foodIngredientsAutocomplete: return Endpoint.baseURL.appending("/food/ingredients/autocomplete")
+            case .recipeAutocomplete: return
+                Endpoint.baseURL
+                .appending("/recipes/autocomplete")
             }
         }
     }
@@ -37,6 +41,16 @@ class NetwokringHandler {
         var queryParameters = apiQueryParameter
         queryParameters["query"] = "\(query)"
         NetworkingManager.shared.request(forUrl: Endpoint.foodIngredientsAutocomplete.stringURL,
+                                         httpMethod: .get,
+                                         queryParameters: queryParameters,
+                                         completion: completion)
+    }
+    
+    static func getRecipesForQuery(_ query: String,
+                                       completion: @escaping (Result<[Recipes], Error>) -> Void) {
+        var queryParameters = apiQueryParameter
+        queryParameters["query"] = "\(query)"
+        NetworkingManager.shared.request(forUrl: Endpoint.recipeAutocomplete.stringURL,
                                          httpMethod: .get,
                                          queryParameters: queryParameters,
                                          completion: completion)
