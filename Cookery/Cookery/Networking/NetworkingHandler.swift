@@ -14,6 +14,7 @@ class NetwokringHandler {
         case randomRecipes
         case foodIngredientsAutocomplete
         case recipeAutocomplete
+        case recipeInformation
         
         fileprivate var stringURL: String {
             switch self {
@@ -22,6 +23,9 @@ class NetwokringHandler {
             case .recipeAutocomplete: return
                 Endpoint.baseURL
                 .appending("/recipes/autocomplete")
+            case .recipeInformation: return
+                Endpoint.baseURL
+                .appending("/recipes")
             }
         }
     }
@@ -51,6 +55,17 @@ class NetwokringHandler {
         var queryParameters = apiQueryParameter
         queryParameters["query"] = "\(query)"
         NetworkingManager.shared.request(forUrl: Endpoint.recipeAutocomplete.stringURL,
+                                         httpMethod: .get,
+                                         queryParameters: queryParameters,
+                                         completion: completion)
+    }
+    
+    static func getRecipeInformation(_ query: String,
+                                       completion: @escaping (Result<[Recipes], Error>) -> Void) {
+        var queryParameters = apiQueryParameter
+        //queryParameters["id"] = "\(query)"
+        queryParameters["includeNutrition"] = "true"
+        NetworkingManager.shared.request(forUrl: "\(Endpoint.recipeInformation.stringURL)/\(query)/information",
                                          httpMethod: .get,
                                          queryParameters: queryParameters,
                                          completion: completion)

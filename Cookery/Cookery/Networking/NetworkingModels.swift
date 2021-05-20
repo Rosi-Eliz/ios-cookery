@@ -14,7 +14,6 @@ struct RandomRecipeQuery: Decodable {
 struct Recipes: Decodable {
     let id: Int64
     let title: String
-    let imageType: String
 }
 
 struct Ingredient: StorageMainainable {
