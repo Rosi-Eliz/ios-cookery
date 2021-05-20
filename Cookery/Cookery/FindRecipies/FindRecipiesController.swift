@@ -62,9 +62,19 @@ extension FindRecipiesController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FindRecipeCell", for: indexPath) as! FindRecipeCell
         let recipe = recipes[indexPath.row]
-        
-        //cell.recipeImage.image = recipes.recipeImage
+    
         cell.recipeNameLabel.text = recipe.title
+        
+        DispatchQueue.global().async { [weak cell] in
+            if let url = URL(string: recipe.imageURL()),
+               let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        cell?.recipeImage.image = image
+                    }
+                }
+            }
+        }
         
         return cell
     }

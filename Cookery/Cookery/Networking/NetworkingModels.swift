@@ -14,6 +14,11 @@ struct RandomRecipeQuery: Decodable {
 struct Recipes: Decodable {
     let id: Int64
     let title: String
+    let imageType: String
+    
+    func imageURL() -> String {
+        return "https://spoonacular.com/recipeImages/\(id)-556x370.\(imageType)"
+    }
 }
 
 struct Ingredient: StorageMainainable {
