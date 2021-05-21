@@ -14,6 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        NetwokringHandler.getRandomRecipes(withLimit: 3) { result in
+//            switch result {
+//            case .success(let model):
+//                print(model)
+//            default:
+//                fatalError()
+//            }
+//        }
+        
+//        NetwokringHandler.getDetailedRecipe(with: 765011) { result in
+//            if case let .success(res) = result {
+//                print(res)
+//            }
+//        }
         return true
     }
 

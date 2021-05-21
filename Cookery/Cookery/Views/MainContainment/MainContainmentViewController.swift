@@ -2,7 +2,7 @@
 //  MainContainmentViewController.swift
 //  Cookery
 //
-//  Created by Nikolay Andonov on 18.05.21.
+//  Created by Rosi-Eliz Dzhurkova on 17.05.21.
 //
 
 import UIKit
@@ -21,10 +21,10 @@ class MainContainmentViewController: UIViewController {
     
     private lazy var containedViewControllers: [UIViewController] = {
         var viewControllers: [UIViewController] = []
+        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "DashboardViewController"))
+        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MyIngredientsViewController"))
+        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "RecipeDetailsViewController"))
         viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "IntolerancesViewController"))
-        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "IntolerancesViewController"))
-        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "SavedRecipiesController"))
-        viewControllers.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PreferencesController"))
         
         return viewControllers
     }()
@@ -55,21 +55,21 @@ class MainContainmentViewController: UIViewController {
     @IBAction func secondTabAction(_ sender: Any) {
         add(containedViewControllers[1])
         setActiveTab(1)
-        navigationItem.title = "Intolerances".uppercased()
+        navigationItem.title = "Ingredients".uppercased()
         navigationItem.titleView = nil
     }
     
     @IBAction func thirdTabAction(_ sender: Any) {
         add(containedViewControllers[2])
         setActiveTab(2)
-        navigationItem.title = "Saved Recipies".uppercased()
+        navigationItem.title = "Bookmarks".uppercased()
         navigationItem.titleView = nil
     }
     
     @IBAction func fourthTabAction(_ sender: Any) {
         add(containedViewControllers[3])
         setActiveTab(3)
-        navigationItem.title = "Preferences".uppercased()
+        navigationItem.title = "Intolerances".uppercased()
         navigationItem.titleView = nil
     }
     

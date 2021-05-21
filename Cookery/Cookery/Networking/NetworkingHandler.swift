@@ -5,27 +5,21 @@
 //  Created by Rosi-Eliz Dzhurkova on 18.05.21.
 //
 
-import Foundation
+import UIKit
 
 class NetwokringHandler {
     private static let apiKey = "87a44ca0b30d4fba8aab771763b898a8"
-    enum Endpoint: String {
+    enum Endpoint {
         private static let baseURL = "https://api.spoonacular.com"
         case randomRecipes
         case foodIngredientsAutocomplete
-        case recipeAutocomplete
-        case recipeInformation
+        case detailedRecipe(id: String)
         
         fileprivate var stringURL: String {
             switch self {
             case .randomRecipes: return Endpoint.baseURL.appending("/recipes/random")
             case .foodIngredientsAutocomplete: return Endpoint.baseURL.appending("/food/ingredients/autocomplete")
-            case .recipeAutocomplete: return
-                Endpoint.baseURL
-                .appending("/recipes/autocomplete")
-            case .recipeInformation: return
-                Endpoint.baseURL
-                .appending("/recipes")
+            case .detailedRecipe(let id): return Endpoint.baseURL.appending("/recipes/\(id)/information")
             }
         }
     }
@@ -50,25 +44,27 @@ class NetwokringHandler {
                                          completion: completion)
     }
     
-    static func getRecipesForQuery(_ query: String,
-                                       completion: @escaping (Result<[Recipes], Error>) -> Void) {
+    static func getDetailedRecipe(with id: Int,
+                                  completion: @escaping (Result<DetailedRecipe, Error>) -> Void)  {
         var queryParameters = apiQueryParameter
-        queryParameters["query"] = "\(query)"
-        NetworkingManager.shared.request(forUrl: Endpoint.recipeAutocomplete.stringURL,
+        queryParameters["includeNutrition"] = "true"
+        NetworkingManager.shared.request(forUrl: Endpoint.detailedRecipe(id: "\(id)").stringURL,
                                          httpMethod: .get,
                                          queryParameters: queryParameters,
                                          completion: completion)
     }
     
-    static func getRecipeInformation(_ query: String,
-                                       completion: @escaping (Result<[Recipes], Error>) -> Void) {
-        var queryParameters = apiQueryParameter
-        //queryParameters["id"] = "\(query)"
-        queryParameters["includeNutrition"] = "true"
-        NetworkingManager.shared.request(forUrl: "\(Endpoint.recipeInformation.stringURL)/\(query)/information",
-                                         httpMethod: .get,
-                                         queryParameters: queryParameters,
-                                         completion: completion)
+    static func loadImageURL(_ imageURL: String, into imageView: UIImageView) {
+        DispatchQueue.global().async { [weak imageView] in
+            if let url = URL(string: imageURL),
+               let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        imageView?.image = image
+                    }
+                }
+            }
+        }
     }
     
     private static var apiQueryParameter: [String: String] {

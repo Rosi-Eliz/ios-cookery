@@ -21,7 +21,7 @@ extension UIColor {
     }
 
     static var paleGrey: UIColor? {
-        return UIColor(hex: "#F6F6F6")
+        return UIColor(hex: "#EBEBEB")
     }
     
     static var componentGrey: UIColor? {

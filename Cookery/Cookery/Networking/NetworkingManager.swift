@@ -37,13 +37,17 @@ class NetworkingManager: NSObject, URLSessionDelegate {
                                queryParameters: [String: String],
                                completion: @escaping ((Result<T, Error>)->())) {
         guard var urlComponent = URLComponents(string: urlString) else {
-            completion(.failure(CustomError.invalidBaseUrl))
+            DispatchQueue.main.async {
+                completion(.failure(CustomError.invalidBaseUrl))
+            }
             return
         }
         urlComponent.queryItems = queryParameters.keys.map { URLQueryItem(name: $0, value: queryParameters[$0]) }
         
         guard let url = urlComponent.url else {
-            completion(.failure(CustomError.invalidBaseUrl))
+            DispatchQueue.main.async {
+                completion(.failure(CustomError.invalidBaseUrl))
+            }
             return
         }
         
@@ -60,7 +64,9 @@ class NetworkingManager: NSObject, URLSessionDelegate {
             if let data = content.toJSONData() {
                 request.httpBody = data
             } else {
-                completion(.failure(CustomError.invalidHttpBody))
+                DispatchQueue.main.async {
+                    completion(.failure(CustomError.invalidHttpBody))
+                }
                 return
             }
         case .put(let content):
@@ -68,7 +74,9 @@ class NetworkingManager: NSObject, URLSessionDelegate {
             if let data = content.toJSONData() {
                 request.httpBody = data
             } else {
-                completion(.failure(CustomError.invalidHttpBody))
+                DispatchQueue.main.async {
+                    completion(.failure(CustomError.invalidHttpBody))
+                }
                 return
             }
         case .delete:
@@ -77,15 +85,21 @@ class NetworkingManager: NSObject, URLSessionDelegate {
         
         let task = urlSession.dataTask(with: request) { data, response, error in
             if let error = error {
-                completion(.failure(error))
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
                 return
             }
             
             if let data = data,
                let result = try? JSONDecoder().decode(T.self, from:  data) {
-                completion(.success(result))
+                DispatchQueue.main.async {
+                    completion(.success(result))
+                }
             } else {
-                completion(.failure(CustomError.invalidResponseData))
+                DispatchQueue.main.async {
+                    completion(.failure(CustomError.invalidResponseData))
+                }
             }
             
         }
